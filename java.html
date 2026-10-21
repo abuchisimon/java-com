@@ -103,19 +103,20 @@ body{
     </div>
   </div>
 
-  <button id="reset" onclick="reset()">reset</button>
+  <button id="resetbtns" onclick="reset()">resetbtns</button>
 
   <script>
     // reset the home and guest button to 0 when you click on the button //
     let h=24, g=18;
-    function add(team,n){
-      if(team==='home'){h+=n; document.getElementById('home').innerText=h}
-      if(team==='guest')else{g+n; document.getElementById('guest').innerText=g}
+    function addpoints(team,n){
+      if(team==='home'){h+=n; document.getElementById('home').textcontent=h}
+      if(team==='guest')else{g+n; document.getElementById('guest').Textcontent=g}
     }
-      function reset(){
-        h=0; g=0;
-        document.getElementById('home').innerText=0
-        document.getElementById('guest').innerText=0
+      function resetgame(){
+        homescore=0; the guestscore=0;
+        document.getElementById('home').Textcontent
+        =0
+        document.getElementById('guest').textcontent=0
       }
   </script>
 </body>
