@@ -110,7 +110,7 @@ body{
     let h=24, g=18;
     function add(team,n){
       if(team==='home'){h+=n; document.getElementById('home').innerText=h}
-      else{g+n; document.getElementById('guest').innerText=g}
+      if(team==='guest')else{g+n; document.getElementById('guest').innerText=g}
     }
       function reset(){
         h=0; g=0;
